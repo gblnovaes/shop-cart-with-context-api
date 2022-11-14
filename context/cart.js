@@ -8,9 +8,9 @@ export default function CartProvider({children}){
 
     useEffect(()=>{
        
-            let total = 0
-            
-          total = cart.map((value) =>{ value += value.price} )
+        let total = 0
+
+        total = cart.map((value) =>{ value += value.price} )
         
         setTotalValue(total)
     },[cart])
@@ -22,8 +22,6 @@ export default function CartProvider({children}){
 
         setCart([...newCart])
  
-       
-      
      }
 
     const store = {
